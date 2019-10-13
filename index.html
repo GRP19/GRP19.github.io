@@ -22,7 +22,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     
 <!-- The Team Menu-->
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button w3-block w3-white" id="myBtn">
-      The Team <i class="fa fa-caret-down"></i>
+      The Team 
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
     <a href="#The Team" class="w3-bar-item w3-button" onclick="closeNav()">All of us</a>
@@ -37,11 +37,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="#Ideal Jobs" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Ideal Jobs</a>
     <a href="#Industry Data" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Industry Data</a>
     <a href="#Interview" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Interview</a>
-    <a href="#IT Research" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">IT Research</a>
+    
+    <!-- IT Research Dropdown -->
+        <a onclick="myAccFunc2()" href="javascript:void(0)" class="w3-bar-item w3-button w3-block w3-white" id="myBtn2">
+      IT Research 
+    </a>
+    <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <!--IT research menu dropdown-->
+      <a href="IT Research" class="w3-bar-item w3-button" 							onclick="closeNav()">IT Research</a>
+      <a href="Blockchain" class="w3-bar-item w3-button"onclick="closeNav()">Blockchain</a>
+      <a href="Cyber Security" class="w3-bar-item w3-button"onclick="closeNav()">Cyber Security</a>
+      <a href="Machine Learning" class="w3-bar-item w3-button"onclick="closeNav()">Machine 				Learning</a>
+      <a href="#" class="w3-bar-item w3-button">Natural Language Processing</a>
+    </div>
+    <!--Menu Continued -->
     <a href="#Project Idea" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Project Idea</a>
   </div>
 </nav>
-
 <!-- Page Content -->
 <div class="w3-main w3-padding-large" style="margin">
 
@@ -390,8 +402,18 @@ function myAccFunc() {
   }
 }
 
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
+
+// Accordion 2
+function myAccFunc2() {
+  var x = document.getElementById("demoAcc2");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
 // Open and close sidebar
 function openNav() {
   document.getElementById("mySidebar").style.width = "30%";
