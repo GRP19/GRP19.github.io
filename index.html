@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>GRP 19</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <body>
-
-
-<!--<div class="w3-top">-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+</style>
+<body>
 
 <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
 <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;left:0;z-index:2" id="mySidebar">
@@ -16,16 +17,11 @@
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
-    <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()"><b>GRP</b>19<br></a>
-	  <!--
-  <div class="w3-sidebar w3-white w3-wide w3-padding w3-card">
-    Float links to the right. Hide them on small screens -->
-    <!--<div class="w3-right w3-hide-small">
-	    
-      <a href="#home" class="w3-bar-item w3-button"><br><b>GRP</b>19<br><br></a>-->
-	    
-      <!--<a href="#The Team" class="w3-bar-item w3-button">The Team</a>-->
-	<a onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button w3-block w3-white" id="myBtn">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    
+    <!--<a href="#The Team" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">The Team</a>-->
+
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button w3-block w3-white" id="myBtn">
       The Team <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
@@ -35,237 +31,125 @@
       <a href="#" class="w3-bar-item w3-button">Lachlan D</a>
       <a href="#" class="w3-bar-item w3-button">Lachlan R</a>
     </div>
-      <a href="#Test Results" class="w3-bar-item w3-button">Test Results</a>
-      <a href="#Ideal Jobs" class="w3-bar-item w3-button">Ideal Jobs</a>
-      <a href="#Tools" class="w3-bar-item w3-button">Tools</a>
-      <a href="#Industry Data" class="w3-bar-item w3-button">Industry Data</a>
-      <a href="#Interview" class="w3-bar-item w3-button">Interview</a>
-      <a href="#IT Research" class="w3-bar-item w3-button">IT Research</a>
-      <a href="#Project" class="w3-bar-item w3-button">Project</a>
-    </div>
+    <a href="#Test Results" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Test Results</a>
+    <a href="#Interview" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Interview</a>
+    <a href="#IT Research" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">IT Research</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
   </div>
-<!--</div>-->
+</nav>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px; margin-right:40px">
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;left:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
     <h1 class="w3-jumbo"><b>GRP</b>19</h1>
-    <p>Assignment 2</p>
+    <p>Team Profile - Assignment 2</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <!--<button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Download Resume
+    </button>-->
   </header>
-    <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-black"></h1>
-  </div>
-</header>
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-  <!-- The Team Section -->
-  <div class="w3-container w3-padding-32" id="The Team">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">The Team</h3>
-  <div class="w3-container w3-padding-64 w3-center" id="The Team">
-    </div>
-      <!-- Profile Pictures -->
+  <!-- Our Team Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">The Team</h2>
+    <hr class="w3-opacity">
+    <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
+    <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
+   
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>Jane Doe saved us from a web disaster.</p><br>
     
-      <!-- Aaron -->
-  <div class = "w3-left w3-large">
-  <p> Aaron</p></div>
-      <div class="w3-row">
-    <div class="w3-col m6 w3-left w3-padding-large">
-      
-      <!--<img src="/w3images/avatar_hat.jpg" class="w3-round w3-image " alt="Photo of Aaron" width="400" height="200">-->
-    </div>
-    <div class="w3-col m6  w3-padding-large w3-left">
-      <p>Name: Aaron Mifsud<br>
-Student Number: s3819427<br>
-Background:<br>
-Hobbies: Writing, cooking, video games<br>
-IT Interest:  Cyber Security <br>
-IT Experience: Very limited professional experience, have dabbled in web design (html mostly) and building computers in the past.
-</p>
-    </div>
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than Jane Doe.</p><br>
+  <!-- End Portfolio Section -->
   </div>
-          <!-- Turo -->
-	  
-  <div class = "w3-left w3-large">
-  <p> Turo</p></div>
-      <div class="w3-row">
-    <div class="w3-col m6 w3-left w3-padding-large">
-      <a href="Turo.html">Turo's webpage
-      <!--<img src="/w3images/avatar_hat.jpg" class="w3-round w3-image " alt="Photo of Turo" width="400" height="200">-->
-	      </a>
-    </div>
-    <div class="w3-col m6  w3-padding-large w3-left">
-	    <p>Name: <a href="Turo.html">Arturo Adriaens</a><br>
-Student Number: s3812495<br>
-Background:<br>
-Hobbies: Camping, Music, Dancing, and Gaming<br>
-IT Interest:  Cyber Security <br>
-I have no work or professional experience in IT, only based on personal experience when I used to build systems and networks.<br>
-</p>
-    </div>
-  </div>
-  
-      <!-- Hillary -->
-  <div class = "w3-left w3-large">
-  <p> Hillary</p></div>
-      <div class="w3-row">
-    <div class="w3-col m6 w3-left w3-padding-large">
-      <a href="Hillary.html">
-      <img src="HR.jpg" class="w3-round w3-image" alt="Photo of Hillary and Webpage Link" width="400" height="200">Hillary's webpage>
-	      </a>
-    </div>
-    <div class="w3-col m6  w3-padding-large w3-left">
-      <p>Name: <a href="Hillary.html">Hillary Rodie</a><br>
-Student Number: s3796100<br>
-Background:<br>
-Hobbies: Reading and Relaxing<br>
-IT Interest:  Cyber Security <br>
-IT Experience: Worked as a Business Analyst in Communication and Technology teams for the past two years. 
-</p>
-    </div>
-  </div>
-        <!-- Lachlan Dawson -->
-  <div class = "w3-left w3-large">
-  <p> Lachlan Dawson</p></div>
-      <div class="w3-row">
-    <div class="w3-col m6 w3-left w3-padding-large">
-      
-      <img src="LDphoto.JPG" class="w3-round w3-image " alt="Photo of Lachlan D" width="400" height="200">
-    </div>
-    <div class="w3-col m6  w3-padding-large w3-left">
-      <p>Name: Lachlan Dawson<br>
-Student Number: s3819427<br>
-Background:<br>
-Hobbies: Writing, cooking, video games<br>
-IT Interest:  Cyber Security <br>
-IT Experience: Very limited professional experience, have dabbled in web design (html mostly) and building computers in the past.
-</p>
-    </div>
-  </div>
-        <!-- Lachlan Rippingale-->
-  <div class = "w3-left w3-large">
-  <p> Lachlan Rippingale</p></div>
-      <div class="w3-row">
-    <div class="w3-col m6 w3-left w3-padding-large">
-      
-      <img src="LR2.JPG" class="w3-round w3-image " alt="Photo of Lachlan R" width="400" height="200">
-    </div>
-    <div class="w3-col m6  w3-padding-large w3-left">
-      <p>Name: Lachlan Rippingale<br>
-Student Number: s3795639<br>
-Background:<br>
-Hobbies: Basketball, Gaming, Socializing, and Tinkering<br>
-IT Interest:   IT Analyst <br>
-IT Experience: The only professional experience I’ve had with IT is casual work for a computer shop. Other than that I’ve done a lot with computers as a hobby.
- 
 
-</p>
-    </div>
-  </div>
-<!-- Test Results Section -->
-<div class="w3-container w3-padding-32" id="Test Results">
-<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Test Results</h3>
-<br>
-<p>
-<br>Turo<br>
-Test 1: Myers-Briggs - ENFP <br>
-Test 2: Learning Style - Visual 50%, Auditory 30% and Tactical 20% <br>
-Test 3: Five Big Personality Test - Agreeableness at 85%, Neuroticism at 69%, Openness at 56% <br>
-<p>
-<br>Lachlan R<br>
-Test 1: Myers-Briggs - ENFJ <br>
-Test 2: Learning Style - Visual 45%, Auditory 30%, Tactile 25%  <br>
-Test 3: Big Five Personality Test - Extraversion at 85%, Agreeableness at 83%, Openness at 79%, Conscientiousness at 48%, Neuroticism at 44% <br>
-<p>
- 
-<br>Lachlan D<br>
-Test 1:<br>
-Test 2:<br>
-Test 3:<br>
- <p>
-<br>Aaron<br>
-Test 1: Myers-Briggs - INTP-T<br>
-Test 2: Learning Style -  Auditory 45%, Visual 35%, Tactile 20%  <br>
-Test 3: Big Five Personality Test - Neuroticism 85%, Openness 52%, Agreeableness 52%,  Extraversion 12.5%, Conscientiousness 4%<br>
-<p>	
- 
-<br>Hillary<br>
-Test 1: Myers-Briggs - INTP<br>
-Test 2: Learning Style -  Visual 50%, Auditory 35%, Tactile 15%  <br>
-Test 3: Big Five Personality Test - Openness at 73%, Neuroticism at 54%, Extraversion at 46%, Agreeableness at 46%, Conscientiousness at 21%.
-<p><br>
-
-<!-- Ideal Jobs Section -->
-<div class="w3-container w3-padding-32" id="Ideal Jobs">
-<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Ideal Jobs</h3>
-<p>Turo: Senior Security Event Analyst<br>
-Lachlan D: <br>
-Lachlan R: IT Consultant<br>
-Aaron:<br>
-Hillary:<br><p>
-
-<!-- Tools Section? -->
-<div class="w3-container w3-padding-32" id="Tools">
-<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tools</h3>
-<p>
-    <a href =" https://alphacenturo.github.io/s3812495-turo-/">Turo</a><br>
-    <a href =" https://lachlandawson98.github.io/INTROITPROJ1/">Lachlan D</a><br>
-    <a href =" https://lachlan-rippingale.github.io">Lachlan R</a><br>
-    <a href =" https://hilly-r.github.io/">Hilly</a><br><p>
-    
-    
- <!-- Industry Data Section -->
- <div class="w3-container w3-padding-32" id="Industry Data">
- <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Industry Data</h3>   
- </div> 
-    <p>
-  
-    <!-- Interview Section -->
-  <div class="w3-container w3-padding-32" id="Interview">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Interview</h3>
-  </div>
-	
-    <p>
-<b>Name:</b> Timothy Pratt<br> <b>Rank:</b> CPL<br> <b>Job Title:</b> Information Systems Technician<br> <b>Employer:</b> Australian Defence Force<br><br>
-IntroductionCorporal (CPL) Timothy Pratt from the Australian Defence Force (ADF) is an Information Technology (IT) professional within Royal Australian Corps of Signals. CPL Pratt have been in the Army for over nine years and is an experience and adept Information Systems Technician.<br><br> <b>How did you become an IT professional at your current employment?</b><br>CPL Pratt began his career as a recruit at the Army Recruit Training Centre, Kapooka. Upon completion of recruit training, CPL Pratt commenced his Initial Employment Training at the Defence Force School of Signals (DFSS), Macleod. CPL Pratt was trained on basic aspect of the IT industry and once deemed competent; he would then be posted to Army units anywhere in Australia. CPL Pratt’s training does not end at the DFSS, he will continue to gain skill, knowledge and experience through ad-hoc training, field exercises and promotional courses throughout his career.What Kind of work is done by the IT professional?As an IT professional in the ADF, CPL Pratt’s role can vary depending on whether he is in a tactical (field) or strategic environment (base). In the tactical environment, CPL Pratt’s role includes but not limited to; provide IT services, System Administrator, monitor Defence Local Area Network, maintain servers and client machines, liaise with clients to resolve issues, roll out upgrades and apply necessary updates.In a strategic environment, CPL Pratt conducts ongoing training to soldiers and officers at his unit, provides technical advice to Chain of Command (CoC) for planning, maintain equipment serviceability, and manage administration of soldiers within his detachments.CPL Pratt is currently posted at DFSS as an Instructor, mentoring and imparting knowledge and experience to young and impressionable trainees. This also include soldiers from other unit that have come to DFSS to complete advance courses.<br><br><b>What kind of people does the IT professional interact with? Are there any other IT professionals? Clients? Investors? The general public?</b><br>CPL Pratt is an IT professional in the Corps of Signals in the Army and therefore, he is seen as a subject matter expert. CPL Pratt deals with various individuals at all levels, from soldiers to high ranking officers. Due to his current posting at DFSS, CPL Pratt deals with trainees on regular basis as well as co-instruct with civilian IT instructors from Box Hill Institute. <br>
-CPL Pratt believes that some civilian instructors are often hard to understand by the trainees due to having English as their second language. The civilian instructor also teaches at a level above the understanding of a common trainee and therefore, would sometimes translate information in Army terms. Nevertheless, CPL Pratt maintains good rapport with the Box Hill Institute instructors.Where does the IT professional spend most of their time?When not instructing, CPL Pratt would be in the open plan office and continues to actively pursue knowledge and experience through own personal research and learning, allowing him to maintain situational awareness in regards to new and emerging software and technology. When opportunity permits, CPL Pratts conducts additional defence sponsored studies such as Microsoft and Cisco courses online or at an external agency.What aspect of their position is most challenging?CoC expect all Corporal within the Corps of Signals to be subject matter experts at their chosen field however, maintaining the wealth of skills and knowledge gain over the years can be quite a challenge. This is even more difficult to achieve particular when the CoC often does not provide training or just simply no time to conduct continuous training due to high work tempo.<br><br>  <b>What area of IT interest you the most? How will you likely achieve this?</b><br>CPL Pratt expressed high interest in Networking. CPL Pratt believe result is seen immediately if the network is running well or not by the feedback from CoC and clients. CPL Pratt continue to maintain professional development in this area due to the number of free and paid resources available to individuals.CPL Pratt also express particular interest in Server Administration and Cyber Security. CPL Pratt wish to pursue Cyber Security in the near future through tertiary studies.
-
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
-  </div>
-
-
-  <!-- IT Research Section -->
-  <div class="w3-container w3-padding-32" id="IT Research">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">IT Research</h3>
-  </div>
-	
-    <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="Project">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Project</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-
-  
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
     </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download PDF Report
+    </button>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24">My Reputation</h3>
+    </div>
+    
+  <!-- End About Section -->
   </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div>
+    
+  <!-- End Contact Section -->
+  </div>  
   
-<!-- Footer -->
-<footer class="w3-center">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-	  
-<!-- End page content -->
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
 </div>
-	
+
 <script>
-<!--// Accordion -->
+// Accordion 
 function myAccFunc() {
   var x = document.getElementById("demoAcc");
   if (x.className.indexOf("w3-show") == -1) {
@@ -282,11 +166,11 @@ function openNav() {
   document.getElementById("mySidebar").style.width = "30%";
   document.getElementById("mySidebar").style.display = "block";
 }
-	function closeNav() {
+
+function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
 
 </body>
-  
 </html>
